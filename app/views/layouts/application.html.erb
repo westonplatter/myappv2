@@ -5,11 +5,18 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'bootstrap' %>
+    <%= stylesheet_pack_tag 'bootstrap' %>
+
     <%= javascript_pack_tag 'application' %>
+    <%= javascript_pack_tag 'stylesheets' %>
   </head>
 
   <body>
-    <%= yield %>
+    <%= render partial: "/layouts/header" %>
+
+    <div id="main" class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
