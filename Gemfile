@@ -10,6 +10,7 @@ gem 'sass-rails', '~> 5'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 gem 'webpacker', '~> 4.x'
+gem 'react-rails'
 
 gem 'devise'
 gem 'rolify'
